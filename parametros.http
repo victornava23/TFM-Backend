@@ -1,0 +1,30 @@
+@api = http://localhost:3000/parametros
+###get all parametros hola
+GET {{api}}
+
+###Add a new parametro
+POST {{api}}
+Content-Type: application/json
+
+{
+    "parametro": "parametro desde kaya",                                       
+    "descripcion": "descricipción de parametro 3"
+}
+
+### Get parametro by id
+GET {{api}}/1
+
+###Delete a parametro
+DELETE  {{api}}/4
+
+###Get total parametros
+GET  {{api}}/count
+
+###Update a parametro
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "parametro": "parametro desde Soraaa",                                       
+    "descripcion": "descricipción de parametro 3"
+}

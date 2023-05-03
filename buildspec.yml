@@ -1,0 +1,24 @@
+version: 0.2
+
+phases: 
+    install:
+        runtime-versions:
+            nodejs: latest
+        commands:
+            - echo Installing source NPM dependencies...
+            - npm install 
+            - npm i -g mocha
+    pre_build:
+        commands: 
+            - echo "we are in the pre build phase"
+    build:
+        commands:
+            - echo "we are in the build block"
+            - npm test
+    post_build:
+        commands:
+            - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'           
+            

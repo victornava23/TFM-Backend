@@ -3,20 +3,20 @@ source /home/ec2-user/.bash_profile
 cd /home/ec2-user
 
 DIR1="backend"
-if [ ! -d "$DIR" ]; then
-  echo "${DIR} does not exist. Creating.."
+if [ ! -d "$DIR1" ]; then
+  echo "${DIR1} does not exist. Creating.."
   mkdir backend
 fi
 
-DIR1="logs"
-if [ ! -d "$DIR" ]; then
-  echo "${DIR} does not exist. Creating.."
+DIR2="logs"
+if [ ! -d "$DIR2" ]; then
+  echo "${DIR2} does not exist. Creating.."
   mkdir logs
 fi
 
-DIR1="resources"
-if [ ! -d "$DIR" ]; then
-  echo "${DIR} does not exist. Creating.."
+DIR3="resources"
+if [ ! -d "$DIR3" ]; then
+  echo "${DIR3} does not exist. Creating.."
   mkdir resources
 fi
 
